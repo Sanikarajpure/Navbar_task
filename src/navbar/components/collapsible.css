@@ -1,0 +1,32 @@
+.collapsibleWrapper {
+  padding: 2% 0 2% 0;
+}
+
+.navSubTitleContainer {
+  width: 80%;
+  margin: 0 0 0 2%;
+  text-align: left;
+  padding: 2%;
+}
+
+.navSubTitleContainer.open {
+  display: block;
+}
+.navSubTitleContainer.closed {
+  display: none;
+}
+.navSubTitle {
+  font-size: 1.1rem;
+  padding: 3% 0 3% 10%;
+  border-left: 0.1px solid #a8a8a8;
+  color: #686868;
+}
+
+.navTitle {
+  padding: 1% 4% 1% 4%;
+  display: flex;
+  font-size: 1.3rem;
+  color: #686868;
+  font-weight: 600;
+  justify-content: space-between;
+}

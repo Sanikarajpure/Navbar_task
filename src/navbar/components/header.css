@@ -1,0 +1,70 @@
+.headerWrapper {
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+.headerLogo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: Dancing Script;
+}
+
+.menuBtn {
+  position: relative;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.menuBtnHamburger {
+  width: 30px;
+  height: 3px;
+  background: #686868;
+  border-radius: 0.4rem;
+}
+
+.menuBtnHamburger::before,
+.menuBtnHamburger::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background: #686868;
+  border-radius: 0.4rem;
+  transition: all 0.5s ease-in-out;
+  margin: 0 0 0 -15px;
+}
+.menuBtnHamburger::before {
+  transform: translateY(-12px);
+}
+.menuBtnHamburger::after {
+  transform: translateY(12px);
+}
+
+/* ANIMATION */
+.menuBtn.open .menuBtnHamburger {
+  transform: translateX(-50px);
+  background-color: transparent;
+}
+.menuBtn.open .menuBtnHamburger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menuBtn.open .menuBtnHamburger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.signInBtn {
+  padding: 2%;
+  font-weight: 600;
+  color: #686868;
+}
