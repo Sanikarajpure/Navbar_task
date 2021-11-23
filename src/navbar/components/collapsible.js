@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import "./collapsible.css";
 import Slide from "react-reveal/Slide";
 
-const Collapsible = ({ title, subTitles }) => {
+const Collapsible = ({ title, icon }) => {
   const [collapseOpen, setCollapseOpen] = useState("");
   return (
     <div className="collapsibleWrapper">
+      <div className="iconContainer">{icon}</div>
       <div
         className="navTitle"
         onClick={() => {
@@ -13,25 +14,6 @@ const Collapsible = ({ title, subTitles }) => {
         }}
       >
         {title}
-        <div>
-          {subTitles ? (
-            collapseOpen ? (
-              <i class="fas fa-chevron-up"></i>
-            ) : (
-              <i class="fas fa-chevron-down"></i>
-            )
-          ) : (
-            ""
-          )}
-        </div>
-      </div>
-
-      <div
-        className={`navSubTitleContainer  ${collapseOpen ? "open" : "closed"}`}
-      >
-        {subTitles
-          ? subTitles.map((ele) => <div className="navSubTitle">{ele}</div>)
-          : ""}
       </div>
     </div>
   );

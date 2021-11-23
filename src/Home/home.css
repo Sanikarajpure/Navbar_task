@@ -1,0 +1,14 @@
+.dummyDataWrapper {
+  height: 84.6vh;
+  overflow-x: scroll;
+}
+.quickMenuHome {
+  height: 8vh;
+}
+
+.chartsDummy {
+  margin: 5% 0 0 0;
+}
+.pieDummy {
+  height: 200px;
+}

@@ -1,83 +1,54 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import "./hamburgerMenu.css";
 import Collapsible from "./collapsible";
 import Slide from "react-reveal/Slide";
 
 const HamburgerMenu = () => {
-  const [searchText, setSearchText] = useState("");
-  const [inputShadow, setInputShadow] = useState("");
+  
 
-  const ref = useRef();
-  useEffect(() => {
-    let clickOutsidehandler = (event) => {
-      if (!ref.current.contains(event.target)) setInputShadow(false);
-    };
-    document.addEventListener("mousedown", clickOutsidehandler);
-
-    return () => {
-      document.removeEventListener("mousedown", clickOutsidehandler);
-    };
-  });
-
-  var subLinksInspo = [
-    "Explore Design Work",
-    "New & NoteWorthy",
-    "Playoffs",
-    "Blog",
-  ];
-  var subLinksFindWork = [
-    "Job Board",
-    "Freelance Projects",
-    "Want freelance design projects?",
-    "Personalize your profile with video",
-  ];
-  var subLinksMarketPlace = [
-    "Discover",
-    "Graphics",
-    "Fonts",
-    "3D",
-    "Templates",
-    "Add-Ons",
-    "Web Themes",
-    "Open a Shop",
-  ];
-  var subLinksHire = [
-    "About Dribbble Hiring",
-    "Design Search",
-    "List my Job Openings",
-    "Post a Freelance Project",
-  ];
   return (
     <div className="hamburgerDropdownContainer">
       <Slide left>
         <div>
-          <div className="searchContainer">
-            <div
-              className={`serachInNav  ${inputShadow ? "focus" : ""}`}
-              ref={ref}
-            >
-              <i class="fas fa-search"></i>
-
-              <input
-                className="searchInput"
-                placeholder="Search"
-                value={searchText ? searchText : ""}
-                onChange={(e) => {
-                  setSearchText(e.target.value);
-                }}
-                onFocus={() => {
-                  setInputShadow(true);
-                }}
-              />
-            </div>
+          <div className="logoContainer">
+            <i class="fas fa-users"></i>Tiimi
           </div>
 
-          <Collapsible title={"Inspiration"} subTitles={subLinksInspo} />
-          <Collapsible title={"Find Work"} subTitles={subLinksFindWork} />
-          <Collapsible title={"LearnDesign"} subTitles={""} />
-          <Collapsible title={"Go Pro"} subTitles={""} />
-          <Collapsible title={"MarketPlace"} subTitles={subLinksMarketPlace} />
-          <Collapsible title={"Hire Designer"} subTitles={subLinksHire} />
+          <Collapsible
+            title={"Dashboard"}
+            icon={<i class="fas fa-chart-line"></i>}
+          />
+          <Collapsible title={"Inbox"} icon={<i class="fas fa-inbox"></i>} />
+          <Collapsible
+            title={"Calendar & Todos"}
+            icon={<i class="fas fa-calendar-day"></i>}
+          />
+
+          <p className="categoryTitle">RECRUTMENT</p>
+          <Collapsible title={"Jobs"} icon={<i class="fas fa-briefcase"></i>} />
+          <Collapsible
+            title={"Candidates"}
+            icon={<i class="fas fa-user-friends"></i>}
+          />
+          <Collapsible
+            title={"My Referals"}
+            icon={<i class="fas fa-link"></i>}
+          />
+          <Collapsible
+            title={"Career Site"}
+            icon={<i class="fas fa-laptop"></i>}
+          />
+          <p className="categoryTitle">ORGANIZATION</p>
+          <Collapsible title={"Employpee"} icon={<i class="fas fa-user"></i>} />
+          <Collapsible
+            title={"Structure"}
+            icon={<i class="fas fa-sitemap"></i>}
+          />
+          <Collapsible
+            title={"Report"}
+            icon={<i class="fas fa-chart-pie"></i>}
+          />
+          <Collapsible title={"Setting"} icon={<i class="fas fa-cogs"></i>} />
         </div>
       </Slide>
     </div>

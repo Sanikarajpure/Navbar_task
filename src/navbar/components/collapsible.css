@@ -1,32 +1,24 @@
 .collapsibleWrapper {
-  padding: 2% 0 2% 0;
+  padding: 2% 0 2% 2%;
+  width: 90%;
+  margin: 1% 0 0 3%;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  color: #909dab;
+}
+.collapsibleWrapper:hover {
+  background-color: #ffdd39;
 }
 
-.navSubTitleContainer {
-  width: 80%;
-  margin: 0 0 0 2%;
-  text-align: left;
-  padding: 2%;
+.iconContainer {
+  margin: 0 2% 0 0;
+  font-size: 1.4rem;
 }
-
-.navSubTitleContainer.open {
-  display: block;
-}
-.navSubTitleContainer.closed {
-  display: none;
-}
-.navSubTitle {
-  font-size: 1.1rem;
-  padding: 3% 0 3% 10%;
-  border-left: 0.1px solid #a8a8a8;
-  color: #686868;
-}
-
 .navTitle {
   padding: 1% 4% 1% 4%;
   display: flex;
   font-size: 1.3rem;
-  color: #686868;
   font-weight: 600;
   justify-content: space-between;
 }

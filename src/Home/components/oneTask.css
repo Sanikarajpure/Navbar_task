@@ -1,0 +1,36 @@
+.oneTaskContainer {
+  background-color: #f3f6f9;
+  width: 90%;
+  margin: 4% 0 0 2%;
+  padding: 2%;
+  border-radius: 0.4rem;
+}
+
+.timeContainer {
+  display: flex;
+  font-weight: 600;
+  width: 30%;
+  color: #8c939d;
+  font-size: 0.7rem;
+  justify-content: space-between;
+}
+.fa-clock {
+  font-weight: 500;
+}
+
+.oneTaskDetailsBlock {
+  display: flex;
+  width: 95%;
+  align-items: center;
+  padding: 3% 0 2% 0;
+}
+
+.taskDescription {
+  text-align: left;
+  font-weight: 600;
+}
+
+.fa-check-square {
+  font-size: 1.8rem;
+  color: #8c939d;
+}

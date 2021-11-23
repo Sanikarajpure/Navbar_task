@@ -1,0 +1,37 @@
+.tasksWrapper {
+  margin-top: 4%;
+  align-items: center;
+}
+.tasksHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  font-weight: 600;
+}
+
+.headerViewMore {
+  color: #8c939d;
+}
+
+.tasksMenu {
+  display: flex;
+  justify-content: space-between;
+  width: 94%;
+  margin: 4% 0 0 2%;
+  background-color: #dde2ea;
+  padding: 1% 1% 1% 1%;
+  border-radius: 0.4rem;
+}
+.taskMenuTitle {
+  width: 43%;
+  padding: 3%;
+  border-radius: 0.4rem;
+  font-weight: 600;
+  color: #8c939d;
+  transition: all 0.2s ease-in;
+}
+
+.taskMenuTitle.active {
+  background-color: #fff;
+  color: black;
+}

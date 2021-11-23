@@ -1,37 +1,27 @@
 .hamburgerDropdownContainer {
   position: absolute;
-  top: 8%;
-  width: 100%;
+  top: 7.2%;
+  width: 80%;
+  height: 92vh;
+  border-right: 1px solid #686868;
+  background-color: #1d2433;
 }
 
-.searchContainer {
+.logoContainer {
   height: 3rem;
-  width: 98%;
-}
-.serachInNav {
-  background-color: rgb(231, 228, 228);
-  border-radius: 0.7rem;
-  margin: 2% 0 2% 2.5%;
-  font-size: 1rem;
-  text-align: left;
-  cursor: pointer;
-  padding: 0% 0 0% 3%;
-  transition: all 0.2s ease-in;
-}
-.serachInNav.focus {
-  box-shadow: rgba(236, 55, 55, 0.308) 0px 2px 8px 0px;
-}
-
-.searchInput {
-  border: none;
-  outline: none;
-  font-size: 1.1rem;
   width: 90%;
-  padding: 3% 0 3% 3%;
-  background-color: rgb(231, 228, 228);
-  color: #686868;
+  color: #ffdd39;
+  font-size: 2rem;
+  margin: 4% 0 0 5%;
+  text-align: left;
 }
 
-.fa-search {
-  color: #686868;
+.fa-users {
+  margin: 0 3% 0 0;
+}
+
+.categoryTitle {
+  text-align: left;
+  margin: 8% 0 4% 2%;
+  font-size: 0.9rem;
 }
