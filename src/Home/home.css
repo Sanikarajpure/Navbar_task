@@ -1,6 +1,6 @@
 .dummyDataWrapper {
-  height: 84.6vh;
-  overflow-x: scroll;
+  height: 84.5vh;
+  overflow-y: scroll;
 }
 .quickMenuHome {
   height: 8vh;
